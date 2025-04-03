@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using System;
+using NAudio.Wave;
 using System.Media;
 using System.Threading;
 
@@ -9,10 +11,8 @@ class Program
           Console.ForegroundColor = ConsoleColor.Cyan;
         try
         {
-            // Play the recorded voice greeting
-            SoundPlayer player = new SoundPlayer("welcome.wav");
+            SoundPlayer player = new SoundPlayer("C:\\Users\\27607\\OneDrive\\Desktop\\ALEX.CHATBOT\\welcome.wav");
             player.PlaySync();
-
             Console.WriteLine("Welcome to ALEX Bot!");
         }
         catch (Exception)
