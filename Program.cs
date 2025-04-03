@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        // 
+          Console.ForegroundColor = ConsoleColor.Cyan;
         try
         {
             // Play the recorded voice greeting
